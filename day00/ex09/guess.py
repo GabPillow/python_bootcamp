@@ -24,7 +24,4 @@ if number == 42:
 if try_out == 1:
     print('In one try? You\'re a lucky one')
 else:
-    print('You did it! In {} try'.format(try_out))
-
-    
-
+    print('You did it! In {} try'.format(try_out)) 
