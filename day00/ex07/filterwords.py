@@ -1,10 +1,10 @@
 import sys
+import string
 
-def list_maker(str=''):
-    for c in str:
-        if not c.isdigit() and not c.isalpha():
-           str = str.replace(c, ' ')
-    return (str.split(' '))
+def list_maker(s=''):
+    for c in string.punctuation:
+        s = s.replace(c, ' ')
+    return (s.split())
 
 if  len(sys.argv) > 3 or len(sys.argv) < 3 or not sys.argv[2].isdigit():
     sys.exit("ERROR")
